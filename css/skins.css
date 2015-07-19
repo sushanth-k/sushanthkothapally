@@ -165,6 +165,7 @@ __________________________________________________________
     .c_red .m_r { color: #ff3300;}
     .c_red div#headline h1 {color: #ff3300;}
     .c_red div#headline h2 a:hover { color: #ff3300; }
+    .c_red div#headline h3 {font-size: 8}
     .c_red .item_text h3 {color: #ff3300; }
     .c_red .btn_see_it_live { color: #ff3300; }
     .c_red .close_item_info, .c_red .next_slide, .c_red .prev_slide { background-color: #ff3300;}
