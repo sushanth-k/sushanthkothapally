@@ -165,8 +165,8 @@ __________________________________________________________
     .c_red .m_r { color: #ff3300;}
     .c_red div#headline h1 {color: #ff3300;}
     .c_red div#headline h2 a:hover { color: #ff3300; }
-    .c_red div#headline h3 {font-size: 8}
-    .c_red .item_text h3 {color: #ff3300; }
+    .c_red div#headline h3 {font-size: 8px;}
+    .c_red .item_text h3 {color: #ff3300; }    
     .c_red .btn_see_it_live { color: #ff3300; }
     .c_red .close_item_info, .c_red .next_slide, .c_red .prev_slide { background-color: #ff3300;}
     .c_red .contactContainer input.btn { background-color: #ff3300;}
@@ -175,7 +175,10 @@ __________________________________________________________
     .c_red #btn_top { background-color: #ff3300;}
     .c_red #patterns > div {background-color: #ff3300;}
     .c_red .about_text ul {list-style-image: url(../images/li_check_red.png);}
+    .c_red .about_text h2 {color: #ff3300;}
     .c_red .item_text ul { list-style-image: url(../images/li_check_red.png);}
+    .c_red .description h2 {border-bottom-color:#ff3300;color: #ff3300;}
+    .c_red .description .wrap .items ul {list-style-image: url(../images/li_check_red.png);}
 
 #body_pat.c_blue { background-color: #1d7ccc; }
     .c_blue div#navbarHolder {background-color: #1d7ccc;}
@@ -185,7 +188,7 @@ __________________________________________________________
     .c_blue .m_r { color: #1d7ccc;}
     .c_blue div#headline h1 {color: #1d7ccc;}
     .c_blue div#headline h2 a:hover { color: #1d7ccc; }
-    .c_blue .item_text h3 {color: #1d7ccc; }
+    .c_blue .item_text h3 {color: #1d7ccc; }    
     .c_blue .btn_see_it_live { color: #1d7ccc; }
     .c_blue .close_item_info, .c_blue .next_slide, .c_blue .prev_slide { background-color: #1d7ccc;}
     .c_blue .contactContainer input.btn { background-color: #1d7ccc;}
@@ -193,7 +196,10 @@ __________________________________________________________
     .c_blue #btn_top { background-color: #1d7ccc;}
     .c_blue #patterns > div {background-color: #1d7ccc;}
     .c_blue .about_text ul {list-style-image: url(../images/li_check_blue.png);}
-    .c_blue .item_text ul { list-style-image: url(../images/li_check_blue.png);}
+    .c_blue .about_text h2 {color: #1d7ccc;}
+    .c_blue .item_text ul { list-style-image: url(../images/li_check_blue.png);}    
+    .c_blue .description h2 {border-bottom-color:#1d7ccc;color: #1d7ccc;}    
+    .c_blue .description .wrap .items ul {list-style-image: url(../images/li_check_blue.png);}
 
 #body_pat.c_green { background-color: #7cce06; }
     .c_green div#navbarHolder {background-color: #7cce06;}
@@ -211,7 +217,10 @@ __________________________________________________________
     .c_green #btn_top { background-color: #7cce06;}
     .c_green #patterns > div {background-color: #7cce06;}
     .c_green .about_text ul {list-style-image: url(../images/li_check_green.png);}
+    .c_green .about_text h2 {color: #7cce06;}
     .c_green .item_text ul { list-style-image: url(../images/li_check_green.png);}
+    .c_green .description h2 {border-bottom-color:#7cce06;color: #7cce06;}    
+    .c_green .description .wrap .items ul {list-style-image: url(../images/li_check_green.png);}
 
 #body_pat.c_pink { background-color: #ff009c; }
     .c_pink div#navbarHolder {background-color: #ff009c;}
@@ -229,7 +238,10 @@ __________________________________________________________
     .c_pink #btn_top { background-color: #ff009c;}
     .c_pink #patterns > div {background-color: #ff009c;}
     .c_pink .about_text ul {list-style-image: url(../images/li_check_pink.png);}
+    .c_pink .about_text h2 {color: #ff009c;}
     .c_pink .item_text ul { list-style-image: url(../images/li_check_pink.png);}
+    .c_pink .description h2 {border-bottom-color:#ff009c;color: #ff009c;}    
+    .c_pink .description .wrap .items ul {list-style-image: url(../images/li_check_pink.png);}
 
 #body_pat.c_orange { background-color: #fca40a; }
     .c_orange div#navbarHolder {background-color: #fca40a;}
@@ -247,7 +259,10 @@ __________________________________________________________
     .c_orange #btn_top { background-color: #fca40a;}
     .c_orange #patterns > div {background-color: #fca40a;}
     .c_orange .about_text ul {list-style-image: url(../images/li_check_orange.png);}
+    .c_orange .about_text h2 {color: #fca40a;}
     .c_orange .item_text ul { list-style-image: url(../images/li_check_orange.png);}
+    .c_orange .description h2 {border-bottom-color:#fca40a;color: #fca40a;}    
+    .c_orange .description .wrap .items ul {list-style-image: url(../images/li_check_orange.png);}
 
 #body_pat.c_gray { background-color: #7b7b7b; }
     .c_gray div#navbarHolder {background-color: #7b7b7b;}
@@ -265,4 +280,7 @@ __________________________________________________________
     .c_gray #btn_top { background-color: #7b7b7b;}
     .c_gray #patterns > div {background-color: #7b7b7b;}
     .c_gray .about_text ul {list-style-image: url(../images/li_check_gray.png);}
+    .c_gray .about_text h2 {color: #7b7b7b;}
     .c_gray .item_text ul { list-style-image: url(../images/li_check_gray.png);}
+    .c_gray .description h2 {border-bottom-color:#7b7b7b;color: #7b7b7b;}    
+    .c_gray .description .wrap .items ul {list-style-image: url(../images/li_check_gray.png);}

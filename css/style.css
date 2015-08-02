@@ -764,6 +764,7 @@ div {
 .timeline {
     float:right;
     width: 400px;
+    background-color:white;
 }
 .timeline .timeline-item {
     width: 100%;
@@ -850,24 +851,24 @@ div {
 	width:90%;
 } 
 .description h2 {
-    font: bold 20px/20px 'Oswald';
+    font: bold 18px/18px 'Oswald';
     color: #ff3300;
     text-transform:uppercase;
-    border-bottom: 3px solid #ff3300;    
-    height: 40px;
+    border-bottom: 2px solid #ff3300;          
+    height: 25px;
     text-align: right; 
     width: auto;
     float:inherit;}
 
 .description .wrap .items h3 {
     font: 14px 'Oswald', Arial, sans-serif;
-    color: #202020;
+    color: #202020;    
     float:left;
     text-align:left;}
 
 .description .wrap .items h4 {
     font: 12px 'Oswald', Arial, sans-serif;
-    color:#202020;
+    color:#202020;    
     text-align: left;
     float:right;}
 
@@ -889,6 +890,7 @@ div {
     /*line-height: 22px;
     padding: 5px 0 8px;*/
     float:left;
+    width: 700px;
     text-align: left; }
 .description .wrap .items ul {
         list-style-image: url(../images/li_check_red.png);
