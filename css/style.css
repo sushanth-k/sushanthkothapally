@@ -139,7 +139,7 @@ h2 {
  
 div#work h2,
     div#projects h2,
-    div#contact h2 {
+    div#contact h2, div#description h2 {
     font: bold 20px/50px 'Oswald';
     color: #ff3300;
     text-transform: uppercase;
@@ -266,7 +266,13 @@ __________________________________________________________
     .about_text p {
         font: normal 12px/18px arial;
         color: #333; }
- 
+    /*SK*/
+ .about_text h2 {
+     font:normal 18px/18px 'Oswald';
+     color: #ff3300;
+     padding-bottom:1em;
+   }
+
     .about_text a:hover { text-decoration: underline; }
  
     .about_text ul {
@@ -543,7 +549,7 @@ __________________________________________________________
 /*                                                 CONTACT
 __________________________________________________________
 */
-div#contact { /* min-height: 300px;*/ }
+div#contact {  min-height: 300px;}
  
 .contactContainer {
     margin-top: 30px;
@@ -567,7 +573,9 @@ div#contact { /* min-height: 300px;*/ }
         padding: 10px 5px;
         width: 400px;
         margin: 3px 0;
-        background: #eee; }
+        background: #eee; 
+        float:left;
+        }
  
     .contactContainer input.btn {
         background: #ff3300;
@@ -575,7 +583,9 @@ div#contact { /* min-height: 300px;*/ }
         color: #fff;
         text-transform: uppercase;
         width: auto !important;
-        margin-left: 100px; }
+        margin-left: 100px; 
+        float:left;
+        }
  
         .contactContainer input.btn:hover,
         .c_red .contactContainer input.btn:hover,
@@ -589,21 +599,29 @@ div#contact { /* min-height: 300px;*/ }
  
 .message {
     font: normal 12px/18px arial;
-    color: #777; }
+    color: #777; 
+    float:left;
+    }
  
 .contactContainer h3 {
     font: normal 20px/22px 'Oswald';
     text-transform: uppercase;
     color: #333;
-    margin: 0 0 20px 0; }
+    margin: 0 0 20px 0; 
+    float:left;
+    }
  
 .contact_social {
     padding: 20px 0 0 0;
-    margin: 32px 0 0 32px; }
+    margin: 32px 0 0 32px; 
+    float:right;    
+    }
+  
  
     .contact_social span {
         font: normal 11px/32px arial;
         color:#333;
+        float:left;    
     }
     .contact_social a,
     .contact_social span span {
@@ -616,40 +634,64 @@ div#contact { /* min-height: 300px;*/ }
         -moz-border-radius: 16px;
         -webkit-border-radius: 16px;
         border-radius: 16px;
+        display: inline-block;
     } 
     
     .contact_social .facebook {
         background-position: 0 0;
-        margin-right: 10px; }
+        margin-right: 10px; 
+        display: inline-block;
+        float:left;
+        }
  
     .contact_social .twitter {
-        background-position: -32px 0;
-        margin-right: 10px; }
+       background-position: -32px 0;
+        margin-right: 10px; 
+        display: inline-block;
+        float:left;
+        }
  
     .contact_social .linkedin {
-        background-position: -64px 0;
-        margin-right: 10px; }
+       background-position: -64px 0;
+       margin-right: 10px; 
+         display: inline-block;
+         float:left;
+        }
  
     .contact_social .gmail { 
         background-position: -96px 0; 
+        float:left;
     }
     
     .contact_social .address {
         background-position: -128px 0;
         margin-right: 10px;
+        float:left;
     }
     
     .contact_social .phone {
         background-position: -192px 0;
         margin-right: 10px;
+        float:left;
     }
     
     .contact_social .email {
-        
+        float:left;
         background-position: -160px 0;
         margin-right: 10px;
     }
-    
+    .contact_social .github {
+        background: url(../images/GitHub-Mark-Light-32px.png) no-repeat;
+        background-position: 0 0;
+        margin-right: 10px; 
+        background-color: #ff3300;
+        -moz-border-radius: 16px;
+        -webkit-border-radius: 16px;
+        border-radius: 16px;
+        display: inline-block;
+        float:left;
+    }
+        
     .contact_social a:hover,
     .c_red .contact_social a:hover,
     .c_blue .contact_social a:hover,
@@ -797,3 +839,65 @@ div {
     background-color: #9DB668;
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
+/***Description****/
+.description
+{
+	background: #FFFFFF;
+	padding: 2em 0em 2em 0em;
+}
+.wrap{
+	margin:0 auto;
+	width:90%;
+} 
+.description h2 {
+    font: bold 20px/20px 'Oswald';
+    color: #ff3300;
+    text-transform:uppercase;
+    border-bottom: 3px solid #ff3300;    
+    height: 40px;
+    text-align: right; 
+    width: auto;
+    float:inherit;}
+
+.description .wrap .items h3 {
+    font: 14px 'Oswald', Arial, sans-serif;
+    color: #202020;
+    float:left;
+    text-align:left;}
+
+.description .wrap .items h4 {
+    font: 12px 'Oswald', Arial, sans-serif;
+    color:#202020;
+    text-align: left;
+    float:right;}
+
+.description .wrap .items h5 {
+    font: 12px 'Oswald', Arial, sans-serif;
+    color:#202020;
+    font-style:italic;
+    text-align: left;
+    float:left;}
+.description .wrap .items h6 {
+    font: 12px 'Oswald', Arial, sans-serif;
+    color:#202020;    
+    text-align: left;
+    float:left;}
+  
+.description .wrap .items p {
+    font: 12px Arial;
+    color: #202020;
+    /*line-height: 22px;
+    padding: 5px 0 8px;*/
+    float:left;
+    text-align: left; }
+.description .wrap .items ul {
+        list-style-image: url(../images/li_check_red.png);
+        padding-left: 32px;
+        float:left;
+        text-align: left;
+        width:inherit;
+        color: #555; }
+ 
+        .description .wrap .items ul li {  
+            width: 810px;
+              }
