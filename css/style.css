@@ -416,7 +416,7 @@ __________________________________________________________
     margin-top: 32px; }
  
     .item_text h3 {
-        font: normal 26px/28px 'Oswald';
+        font: normal 16px/18px 'Oswald';
         text-transform: uppercase;
         color: #ff3300;
         margin: 0 0 10px 0;
@@ -522,8 +522,8 @@ __________________________________________________________
     width: 100%; }
  
     .pprj .item_text {
-        opacity: 0.93;
-        height: 310px;
+        /*opacity: 0.93;*/
+        height: 400px;
         padding: 20px;
         margin: 0 0 0 32px;
         float: left;
@@ -969,5 +969,4 @@ div {
         .description .resume .wrap .items ul li {  
             width: 810px;
               }
-
 

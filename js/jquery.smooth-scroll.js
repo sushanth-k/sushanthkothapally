@@ -132,5 +132,4 @@ $(".timeline-item").hover(function () {
     $(this).next(".timeline-item").toggleClass("close");
 });
 
-
 })(jQuery);
