@@ -139,7 +139,7 @@ h2 {
  
 div#work h2,
     div#projects h2,
-    div#contact h2, div#description h2 {
+    div#contact h2 {
     font: bold 20px/50px 'Oswald';
     color: #ff3300;
     text-transform: uppercase;
@@ -523,7 +523,7 @@ __________________________________________________________
  
     .pprj .item_text {
         /*opacity: 0.93;*/
-        height: 400px;
+        height: 410px;
         padding: 20px;
         margin: 0 0 0 32px;
         float: left;
@@ -765,27 +765,28 @@ div {
 .timeline {
     float:right;
     width: 600px;
-    background-color:white;   
+    padding-top:2em;
+    padding-bottom:8em; 
 }
 .timeline h2  {
     font: bold 20px/50px 'Oswald';
     color: #ff3300;
     text-transform: uppercase;
-    border-bottom: 6px solid #ff3300;
+    border-bottom: 6px solid #ff3300;    
     height: 50px;
     text-align: right; 
     width: 290px;    
     float:right; }
-.timeline .timeline-item {
-    padding-top:3em;
+.timeline .timeline-item {    
     float:right;
     width: 100%;
+    background-color:#fff;
 }
-.timeline .timeline-item .info, .timeline .timeline-item .year {
+.timeline .timeline-item .info, .timeline .timeline-item .year {    
     color: #eee;
     display: block;
     float:left;
-    -webkit-transition: all 1s ease;
+    -webkit-transition:all 1s ease;
     -moz-transition: all 1s ease;
     transition: all 1s ease;
 }
@@ -820,7 +821,7 @@ div {
     display: block;
     float: right;
     margin-right: -14px;
-    z-index: 2000;
+    /*z-index: 2000;*/
     position: relative;
 }
 .timeline .timeline-item.active .info, .timeline .timeline-item:hover .info {
@@ -843,7 +844,7 @@ div {
     width: 12px;
     border-radius: 100px;
     float: right;
-    z-index: 2000;
+    /*z-index: 2000;*/
     position: relative;
 }
 .timeline .timeline-item.active .marker .dot, .timeline .timeline-item:hover .marker .dot {
@@ -894,26 +895,14 @@ div {
     color: #202020;  
 }
 
-
 /***Description****/
 .description {
     padding-top:6em;
 }
-.description h1 {
-    font: bold 20px/50px 'Oswald';
-    color: #ff3300;
-    text-transform: uppercase;
-    border-bottom: 6px solid #ff3300;
-    height: 50px;
-    text-align: right; 
-    width: 290px;    
-    float:right;
-    margin-bottom:1em;
-}
-.resume
+.description .resume
 {
 	background: #FFFFFF;
-	padding: 1em 0em 1em 0em;
+	padding-bottom:2em;
 }
 .wrap{
 	margin:0 auto;
@@ -924,12 +913,22 @@ div {
     font: bold 18px/18px 'Oswald';
     color: #ff3300;
     text-transform:uppercase;    
-    border-bottom: 2px solid #ff3300;          
+    border-bottom: 2px solid #ff3300;  
+    padding-top:12px;        
     height: 25px;
     text-align: right; 
     width: auto;
     float:inherit;}
-
+       
+ input.button {
+  float: right;
+  padding-top:12px;
+  color: #ff3300; background: #fff;  
+  font-size:12px;
+  font-weight:bold;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: solid 1px #fff;
+}
 .description .resume .wrap .items h3 {
     font: 14px 'Oswald', Arial, sans-serif;
     color: #202020;    
@@ -973,4 +972,28 @@ div {
         .description .resume .wrap .items ul li {  
             width: 810px;
               }
+.heading{
+    font: bold 20px/50px 'Oswald';
+    color: #ff3300;
+    text-transform: uppercase;
+    border-bottom: 6px solid #ff3300;
+    height: 50px;
+    text-align: right; 
+    width: 290px;    
+    float:right;
+    margin-bottom:1em;
+}
 
+.description .resume .save img {
+   height:2em;
+   width:2em;
+   float:right;
+   padding-right:200px;
+   padding-top:2em;
+   padding-bottom:2em;
+}
+.description .resume .save  .viewPDF {
+    background:transparent;    
+    border-style:hidden;
+    float:right;    
+}

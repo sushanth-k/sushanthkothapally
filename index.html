@@ -29,6 +29,7 @@
 <script type="text/javascript" src="js/sp.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/skins.js"></script>
+<script src="js/toggle.js"></script>
 
 </head>
 
@@ -472,54 +473,56 @@ He likes to keep learning path always active, and currently exploring the space 
                         </ul>                                                           
                     </div>
                     <div class="item_text">                        
-                        <h3>Data & Analysis</h3>
+                        <h3>Data Analysis</h3>
                         <div class="clear"></div>                            
                         <h4>Hadoop</h4>
                         <ul>                            
                             <li>Map Reduce</li>                            
                         </ul>
-                        <h4>Data Analytics</h4>
+                        <h4>Statistics</h4>
                         <div class="clear"></div>
                         <ul><li>R</li></ul>
                         <h4>Microsoft Business Intelligence </h4>                            
                            <ul>
-                            <li>SSRS</li>
-                            <li>SSIS</li> 
-                            <li>SSAS</li>
+                            <li>SSRS, SSIS and SSAS</li>                           
                             <li>Excel power pivots and charts</li>
                         </ul> 
-                       
+                       <h4>Databases</h4>
+                        <ul>
+                            <li>Cassandra and SQL Server</li>
+                            <li>MySQL and Oracle</li>
+                        </ul>
                                      
                 </div> 
                     <div class="item_text">
                         <h3>Application Development </h3> 
                         <div class="clear"></div>                     
+                        <h4>Langauges</h4>
                         <ul>
-                            <li>C# and ASP .NET</li>
-                            <li>JavaScript & Angular JS</li>
-                            <li>Core Java</li>                            
-                            <li>MVC</li>
-                            <li>Entity Framework</li> 
-                            <li>N unit & J unit</li>                                   
-                       </ul> 
-                        <h4>Databases</h4>
+                            <li>C# , JavaScript, PL/SQL and Core Java</li> 
+                            <li>XML,HTML and CSS</li>                          
+                                
+                        </ul>
+                        <h4>Frameworks</h4>
                         <ul>
-                            <li>No SQL Cassandra</li>
-                            <li>SQL Server</li>
-                            <li>MySQL</li>
-                            <li>Oracle</li>
-                        </ul>                           
+                            <li>ASP .NET and MVC</li>
+                            <li>Entity Framework</li>
+                            <li>N unit & J unit</li>
+                        </ul> 
+                        <h4>Language Libraries</h4>
+                        <ul><li>AngularJS</li></ul>                                                  
                    </div>
                </div><!-- end div .pprj -->              
             </div><!-- end div .projectsContainer -->
             <div class="clear"></div>
         </div><!-- end div #projects -->      
           <!----------------------Timeline------->
-        <!-- You will need to convert css to LESS -->
-        <div class="timeline">
-            <h2>Timeline.</h2>
+        <!-- You will need to convert css to LESS -->  
+        <div class="heading">Timeline.</div>
+         <div class="clear"></div> 
+        <div class="timeline">            
             <div class="clear"></div>          
-            <div class="timeline-item active">                
+            <div class="timeline-item active">                               
 			    <div class="year">                    
                     2015 <span class="marker"><span class="dot"></span></span>                                    
                 </div>                                 
@@ -544,8 +547,7 @@ He likes to keep learning path always active, and currently exploring the space 
 				        <p>May 2015 – August 2015 College Station,TX,USA</p>
                     </div>									
 				</div><!-- info -->															
-			</div><!-- timeline-item -->   
-            
+			</div><!-- timeline-item -->             
             <div class="timeline-item active">                
 			    <div class="year">
                     2014 <span class="marker"><span class="dot"></span></span>                                    
@@ -611,16 +613,17 @@ He likes to keep learning path always active, and currently exploring the space 
                     </div>									
 				</div><!-- info -->															
 			</div><!-- timeline-item -->
+            <div class="clear"></div>
         </div>     
         <div class="clear"></div>
-            <!-- About me -->     
-           
-        <div class="description">  
-            <h1>Resume</h1> 
-            <div class="resume">        
-            <div class="clear"></div>
-            <h2>Education</h2>                                    			
-					<div class=" wrap">
+            <!-- About me -->          
+        <div class="heading">Resume.</div>                  
+        <div class="description">                        
+            <div class="resume"> 
+            <div class="clear"> </div>
+            <div><input type="button" class="button" onclick="return toggleMe('edu')" value="+"/></div>                
+                <h2>Education</h2>                                   			
+					<div class=" wrap" id="edu" style="display:none">
                         <div class="clear"> </div>
                         <div class="items">
                        <h3>Texas A&amp;M University, Mays Business School, College Station,TX</h3> 
@@ -643,8 +646,9 @@ He likes to keep learning path always active, and currently exploring the space 
                         </div>	
                         <div class="clear"> </div>                        						 
 					</div>            
-            <h2>Work History</h2> 
-            <div class=" wrap">
+            <div><input type="button" class="button" onclick="return toggleMe('workHistory')" value="+"/></div>
+                <h2>Work History</h2> 
+            <div class=" wrap" id="workHistory" style="display:none">
                         <div class="clear"> </div>
                         <div class="items">
                        <h3>Texas A&amp;M University</h3><br /> 
@@ -690,8 +694,9 @@ He likes to keep learning path always active, and currently exploring the space 
                         </div>                       	
                         <div class="clear"> </div>                        						 
 					</div>   
-            <h2>Leadership</h2>
-            <div class="wrap">
+            <div><input type="button" class="button" onclick="return toggleMe('leadership')" value="+"/></div>
+            <h2>Leadership</h2>            
+            <div class="wrap" id="leadership" style="display:none">
                 <div class="items">
                     <p><strong>Mentor</strong>,International Student Mentor Association, Texas A&amp;M University </p> 
                         <h4>May 2015 - Present</h4>
@@ -700,9 +705,10 @@ He likes to keep learning path always active, and currently exploring the space 
             </div> 
                 <div class="clear"> </div>
             </div> 
-            <div class="clear"> </div>       
+            <div class="clear"> </div>
+            <div><input type="button" class="button" onclick="return toggleMe('awards')" value="+"/></div>       
             <h2>Awards</h2>
-             <div class="wrap">
+             <div class="wrap" id="awards" style="display:none">
                 <div class="items">
                     <h3>Texas A&amp;M University</h3>                        
                     <ul>                                
@@ -718,10 +724,18 @@ He likes to keep learning path always active, and currently exploring the space 
                         <li>Winner mission iTech Speak at transITion,Cognizant Technology Solutions<h4>March 2008</h4></li>     
                     </ul>                        
             </div> 
-                <div class="clear"> </div>
+                <div class="clear"> </div>                 
             </div> 
-                </div> <!--end of resume-->
-			</div>  <!--end of description-->       
+             <div class="clear"></div>
+            <div class="save">            
+                <form method="get" action="files/Resume.pdf" target="_blank">
+                    <button type="submit" class="viewPDF"><img src="images/save-icon.png" /></button>
+                </form>                 
+        </div> 
+       </div> <!--end of resume-->
+            
+			</div>  <!--end of description-->     
+        
         
         <!-- About me end-->     
 
