@@ -991,9 +991,19 @@ div {
    padding-right:200px;
    padding-top:2em;
    padding-bottom:2em;
+   padding-left:1em;
 }
 .description .resume .save  .viewPDF {
     background:transparent;    
     border-style:hidden;
     float:right;    
+}
+.description .resume .save  .viewPDF .saveResume {
+    font: bold 16px/50px 'Oswald';
+    color: #ff3300;
+    float:left;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left:1em;
+
 }

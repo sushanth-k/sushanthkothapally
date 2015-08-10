@@ -71,7 +71,7 @@
                 <li><a id="nav_work" href="#work">WORK<span class="m_w">WORK</span><span class="m_r">WORK</span></a></li>
                 <li><a id="nav_projects" href="#projects">Skills<span class="m_w">Skills</span><span class="m_r">Skills</span></a></li>
                 <li><a id="nav_timeline" href="#timeline">Timeline<span class="m_w">Timeline</span><span class="m_r">Timeline</span></a></li>
-                <li><a id="nav_resume" href="#timeline">Resume<span class="m_w">Resume</span><span class="m_r">Resume</span></a></li>
+                <li><a id="nav_resume" href="#resumesection">Resume<span class="m_w">Resume</span><span class="m_r">Resume</span></a></li>
                 <li><a id="nav_contact" href="#contact">Contact<span class="m_w">Contact</span><span class="m_r">Contact</span></a></li>
             </ul>
         </div>
@@ -520,7 +520,7 @@ He likes to keep learning path always active, and currently exploring the space 
         <!-- You will need to convert css to LESS -->  
         <div class="heading">Timeline.</div>
          <div class="clear"></div> 
-        <div class="timeline">            
+        <div class="timeline" id="timeline">            
             <div class="clear"></div>          
             <div class="timeline-item active">                               
 			    <div class="year">                    
@@ -618,7 +618,7 @@ He likes to keep learning path always active, and currently exploring the space 
         <div class="clear"></div>
             <!-- About me -->          
         <div class="heading">Resume.</div>                  
-        <div class="description">                        
+        <div class="description" id="resumesection">                        
             <div class="resume"> 
             <div class="clear"> </div>
             <div><input type="button" class="button" onclick="return toggleMe('edu')" value="+"/></div>                
@@ -729,7 +729,7 @@ He likes to keep learning path always active, and currently exploring the space 
              <div class="clear"></div>
             <div class="save">            
                 <form method="get" action="files/Resume.pdf" target="_blank">
-                    <button type="submit" class="viewPDF"><img src="images/save-icon.png" /></button>
+                    <button type="submit" class="viewPDF"><span class="saveResume">Save Resume</span><img src="images/save-icon.png" /></button>
                 </form>                 
         </div> 
        </div> <!--end of resume-->

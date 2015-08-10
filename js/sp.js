@@ -22,10 +22,13 @@ $(document).ready(function(){
 
        var w = $(window).width();
        
-       var nav_about = (w/2)-315;
-       var nav_work = (w/2)-235;
-       var nav_projects = (w/2)-146;
-       var nav_contact = (w/2)-46;
+       var nav_about = (w / 2) - 470;
+       var nav_work = (w/2)-390;
+       var nav_projects = (w / 2) - 315;
+       var nav_timeline = (w / 2) - 200;
+       var nav_resume = (w / 2) - 200;
+       var nav_contact = (w / 2) - 46;
+       
        
        var lastclicked = 315;
     
@@ -56,17 +59,24 @@ $(document).ready(function(){
                 
         if(isScrolledIntoView('#about')) {
             $('div#navbar').stop().animate({backgroundPosition: nav_about +'px 0'}, {duration:300});
-               lastclicked = 315;
+               lastclicked = 470;
         } else if(isScrolledIntoView('#work')) {
             $('div#navbar').stop().animate({backgroundPosition: nav_work +'px 0'}, {duration:300});
-               lastclicked = 233;
+               lastclicked = 390;
         } else if(isScrolledIntoView('#projects')) {
                $('div#navbar').stop().animate({backgroundPosition: nav_projects +'px 0'}, {duration:300});
-            lastclicked = 144;
+            lastclicked = 315;
+        } else if (isScrolledIntoView('#timeline')) {
+            $('div#navbar').stop().animate({ backgroundPosition: nav_contact + 'px 0' }, { duration: 300 });
+            lastclicked = 275;
+        } else if (isScrolledIntoView('#resumesection')) {
+            $('div#navbar').stop().animate({ backgroundPosition: nav_contact + 'px 0' }, { duration: 300 });
+            lastclicked = 200;
         } else {
             $('div#navbar').stop().animate({backgroundPosition: nav_contact +'px 0'}, {duration:300});
-            lastclicked = 44;
+            lastclicked = 46;
         }
+
     });
 
 
@@ -76,10 +86,12 @@ $(document).ready(function(){
     $(window).resize(function() {
         var w = $(window).width();
         
-           var nav_about = (w/2)-315;
-           var nav_work = (w/2)-233;
-           var nav_projects = (w/2)-144;
-           var nav_contact = (w/2)-44;
+        var nav_about = (w / 2) - 470;
+        var nav_work = (w / 2) - 390;
+        var nav_projects = (w / 2) - 315;
+        var nav_timeline = (w / 2) - 200;
+        var nav_resume = (w / 2) - 200;
+        var nav_contact = (w / 2) - 46;
         
         $('div#navbar').css({backgroundPosition: (w/2)-lastclicked +'px 0'});
         
@@ -88,15 +100,22 @@ $(document).ready(function(){
             if(isScrolledIntoView('#about')) {
                 $("div#nav_logo_w").css("display", 'none');
                 $('div#navbar').stop().animate({backgroundPosition: nav_about +'px 0'}, {duration:300});
-                   lastclicked = 315;
+                   lastclicked = 470;
             } else if(isScrolledIntoView('#work')) {
                 $('div#navbar').stop().animate({backgroundPosition: nav_work +'px 0'}, {duration:300});
-                   lastclicked = 233;
+                   lastclicked = 390;
             } else if(isScrolledIntoView('#projects')) {
                    $('div#navbar').stop().animate({backgroundPosition: nav_projects +'px 0'}, {duration:300});
-                lastclicked = 144;
+                lastclicked = 315;
+            } else if (isScrolledIntoView('#timeline')) {
+                $('div#navbar').stop().animate({ backgroundPosition: nav_contact + 'px 0' }, { duration: 300 });
+                lastclicked = 275;
+            }
+            else if (isScrolledIntoView('#resumesection')) {
+                $('div#navbar').stop().animate({ backgroundPosition: nav_contact + 'px 0' }, { duration: 300 });
+                lastclicked = 200;
             } else {
-                $('div#navbar').stop().animate({backgroundPosition: nav_contact +'px 0'}, {duration:300});
+                $('div#navbar').stop().animate({ backgroundPosition: nav_contact + 'px 0' }, { duration: 300 });
                 lastclicked = 44;
             }
         });
