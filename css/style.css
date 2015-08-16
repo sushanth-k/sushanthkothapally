@@ -261,13 +261,13 @@ __________________________________________________________
         width: 510px;
     }
 .workchart p {
-    font: 12px Arial;
-    color: #777;     
+    /*font: 12px Arial;*/
+    color: #555;     
     float:right;
     max-width:400px;
     padding-left:12px;    
     background: #fff;
-    padding:0.75em;    
+    /*padding:0.75em;    */
 }
 #logo_big {
     background: url(../images/logo_big.png) no-repeat top left;
@@ -1012,9 +1012,11 @@ div {
    padding-left:1em;
 }
 .description .resume .save  .viewPDF {
+    margin:1em 1em 1em 1em;
     background:transparent;    
     border-style:hidden;
     float:right;    
+    background:#fff;
 }
 .description .resume .save  .viewPDF .saveResume {
     font: bold 16px/50px 'Oswald';
@@ -1023,6 +1025,7 @@ div {
     padding-top:1em;
     padding-bottom:1em;
     padding-left:1em;
+    background-color:#fff;
 
 }
 
