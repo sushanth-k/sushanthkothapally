@@ -403,12 +403,13 @@ __________________________________________________________
     border-bottom-width: 40px; }
  
 .pic {
-    position: absolute;
+    position: relative;
+    margin:1em 1em 1em 1em;   
     top: 0;
     left: 0;
-    display: none; }
+    display: none; }    
  
-    .pic.selected { display: block; }
+    .pic.selected { display:grid; }
  
 .next_slide {
     position: absolute;
@@ -1024,3 +1025,8 @@ div {
     padding-left:1em;
 
 }
+
+.copyrights h2 {
+    font: 12px/20px 'Oswald';    
+}
+
